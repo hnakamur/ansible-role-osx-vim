@@ -5,6 +5,8 @@
     - reattach-to-user-namespace
 
 - shell: go get github.com/nsf/gocode creates={{ osx_go_gopath }}/src/github.com/nsf/gocode
+  environment:
+    GOPATH: "{{ osx_go_gopath }}"
 
 - template: src=vim.zsh.j2 dest={{ zsh_custom_dir }}/vim.zsh
 
