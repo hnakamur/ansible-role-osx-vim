@@ -8,6 +8,9 @@ set nobackup
 filetype off
 filetype plugin indent off
 
+" treat symbol characters as full-width characters
+set ambiwidth=double
+
 " config for Go
 let g:gofmt_command = 'goimports'
 set rtp^=/usr/local/opt/go/libexec/misc/vim
